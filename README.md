@@ -3,6 +3,7 @@
 ## Modules: Reusable modules (for VPC, IAM, EKS cluster).
 
 Architecture
+
 The AWS EKS project deployed with Terraform includes these main components: 
 
 VPC and Networking: A dedicated Virtual Private Cloud (VPC) with public and private subnets across multiple Availability Zones (AZs) for high availability. This includes NAT gateways (in public subnets) for outbound internet access from private nodes, and an internet gateway.
