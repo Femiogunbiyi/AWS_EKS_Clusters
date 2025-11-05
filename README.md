@@ -1,6 +1,6 @@
 ## This AWS EKS with Terraform project involves using Infrastructure-as-Code (IaC) to provision a highly available, scalable, and secure Kubernetes cluster on AWS. 
 
-Modules: Reusable modules (e.g., for VPC, IAM, EKS cluster) promote standardization and reduce code duplication. 
+# Modules: Reusable modules (e.g., for VPC, IAM, EKS cluster) promote standardization and reduce code duplication. 
 
 Typical Architecture
 A typical AWS EKS project deployed with Terraform includes these main components: 
@@ -16,10 +16,10 @@ IAM Roles and Policies: Specific IAM roles for the EKS cluster and worker nodes 
 Add-ons and Services: Deployment of AWS Load Balancer Controller.
 
 
-Terraform init: Initializes the working directory, downloads necessary provider plugins (AWS), and sets up the backend for state management (e.g., using an S3 bucket for remote state).
+1. Terraform init: Initializes the working directory, downloads necessary provider plugins (AWS), and sets up the backend for state management (e.g., using an S3 bucket for remote state).
 
-Terraform plan: Creates an execution plan, showing exactly what actions Terraform will take (create, modify, destroy) to match the configuration. This allows for a review of changes before deployment.
+2. Terraform plan: Creates an execution plan, showing exactly what actions Terraform will take (create, modify, destroy) to match the configuration. This allows for a review of changes before deployment.
 
-Terraform apply: Executes the planned actions, provisioning the EKS cluster and all associated infrastructure on AWS.
+3. Terraform apply: Executes the planned actions, provisioning the EKS cluster and all associated infrastructure on AWS.
 
-Configure kubectl: After deployment, the AWS CLI is used to update the local kubeconfig file to allow kubectl to interact with the new EKS cluster's API endpoint.
+4. Configure kubectl: After deployment, the AWS CLI is used to update the local kubeconfig file to allow kubectl to interact with the new EKS cluster's API endpoint.
