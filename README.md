@@ -1,9 +1,9 @@
 # This AWS EKS with Terraform project involves using Infrastructure-as-Code (IaC) to provision a highly available, scalable, and secure Kubernetes cluster on AWS. 
 
-## Modules: Reusable modules (e.g., for VPC, IAM, EKS cluster) promote standardization and reduce code duplication. 
+## Modules: Reusable modules (for VPC, IAM, EKS cluster).
 
-Typical Architecture
-A typical AWS EKS project deployed with Terraform includes these main components: 
+Architecture
+The AWS EKS project deployed with Terraform includes these main components: 
 
 VPC and Networking: A dedicated Virtual Private Cloud (VPC) with public and private subnets across multiple Availability Zones (AZs) for high availability. This includes NAT gateways (in public subnets) for outbound internet access from private nodes, and an internet gateway.
 
